@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <!-- <TextView
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Has clickado 0 veces"
+        app:layout_constraintBottom_toTopOf="@id/boton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /> -->
+
+    <!-- <Button
+        android:id="@+id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contador"/> -->
+
+    <TextView
+        android:id="@+id/contadortotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/reset1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/resetall" />
+
+    <Button
+        android:id="@+id/resetall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/reset1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/contadortotal"/>
+
+    <TextView
+        android:id="@+id/contador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/contador2"
+        app:layout_constraintTop_toBottomOf="@id/resetall"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/mas1_1"/>
+
+    <Button
+        android:id="@+id/mas1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/mas1_2"
+        app:layout_constraintTop_toBottomOf="@id/resetall"
+        app:layout_constraintLeft_toRightOf="@id/contador1"
+        app:layout_constraintRight_toLeftOf="@id/reset1"/>
+
+
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/reset2"
+        app:layout_constraintTop_toBottomOf="@id/resetall"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/mas1_1"/>
+
+    <Button
+        android:id="@+id/mas1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/mas1_3"
+        app:layout_constraintTop_toBottomOf="@id/mas1_1"
+        app:layout_constraintLeft_toRightOf="@id/contador2"
+        app:layout_constraintRight_toLeftOf="@id/reset2"/>
+
+    <Button
+        android:id="@+id/reset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/reset3"
+        app:layout_constraintTop_toBottomOf="@id/reset1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/mas1_2"/>
+
+    <TextView
+        android:id="@+id/contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/contador3"
+        app:layout_constraintTop_toBottomOf="@id/contador1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/mas1_2"/>
+
+    <Button
+        android:id="@+id/mas1_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/mas1_4"
+        app:layout_constraintTop_toBottomOf="@id/mas1_2"
+        app:layout_constraintLeft_toRightOf="@id/contador3"
+        app:layout_constraintRight_toLeftOf="@id/reset3"/>
+
+    <TextView
+        android:id="@+id/contador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/contador4"
+        app:layout_constraintTop_toBottomOf="@id/contador2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/mas1_3"/>
+
+    <Button
+        android:id="@+id/reset3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/reset4"
+        app:layout_constraintTop_toBottomOf="@id/reset2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/mas1_3"/>
+
+    <TextView
+        android:id="@+id/contador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contador3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/mas1_4"/>
+
+    <Button
+        android:id="@+id/mas1_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mas1_3"
+        app:layout_constraintLeft_toRightOf="@id/contador4"
+        app:layout_constraintRight_toLeftOf="@id/reset4"/>
+
+    <Button
+        android:id="@+id/reset4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/mas1_4"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
